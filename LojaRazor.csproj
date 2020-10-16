@@ -231,6 +231,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contato.cshtml" />
     <Content Include="Views\Usuarios\Form.cshtml" />
+    <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
