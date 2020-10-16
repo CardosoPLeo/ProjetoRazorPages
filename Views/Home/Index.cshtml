@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <link hreef="~/Content/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <div class="sidebar-nav well">
+                        <ul>
+                            @foreach (var departamento in ViewBag.Departamentos)
+                            {
+                                <li class="nav-header">@departamento.Nome</li>
+                                foreach (var categoria in departamento.Categoias)
+                                {
+                                    <li>@categoria.Nome</li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="span9">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
